@@ -60,6 +60,7 @@
           </button>
         </div>
         <nav
+          id="navbar"
           :class="{'block': open, 'hidden': !open}"
           class="flex-grow md:block px-4 pb-4 md:pb-0 md:overflow-y-auto"
         >
@@ -139,10 +140,19 @@
           </div>
         </nav>
       </div>
-      <main>
+      <main id="main-doc">
         <header class="text-3xl">Genshin Impact</header>
-        <section class="bg-black-100"><p>asdasdasdasdasdas</p></section>
+        <section class="bg-black-100">
+          <p class="text-sm p-3">
+            Genshin Impact is an open-world action role-playing game that allows
+            the player to control one of four interchangeable characters in a
+            party. Switching between characters can be done quickly during
+            combat, allowing the player to use several different combinations of
+            skills and attacks.
+          </p>
+        </section>
       </main>
     </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>
 </html>
