@@ -28,7 +28,7 @@
     <div class="md:flex flex-col md:flex-row md:min-h-screen w-full">
       <div
         @click.away="open = false"
-        class="flex flex-col w-full md:w-64 text-gray-700 bg-white dark-mode:text-gray-200 dark-mode:bg-gray-800 flex-shrink-0 border-4"
+        class="flex flex-col w-full md:w-64 text-gray-700 bg-white dark-mode:text-gray-200 dark-mode:bg-gray-800 flex-shrink-0 border-solid border-2 border-sky-500"
         x-data="{ open: false }"
       >
         <div
@@ -66,7 +66,7 @@
         >
           <a
             class="block px-4 py-2 mt-2 text-sm font-semibold text-gray-900 bg-gray-200 rounded-lg dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-            href="#"
+            href="#introduction"
             >Introduction</a
           >
           <a
@@ -141,18 +141,57 @@
         </nav>
       </div>
       <main id="main-doc">
-        <header class="text-3xl">Genshin Impact</header>
-        <section class="bg-black-100">
-          <p class="text-sm p-3">
-            Genshin Impact is an open-world action role-playing game that allows
-            the player to control one of four interchangeable characters in a
-            party. Switching between characters can be done quickly during
-            combat, allowing the player to use several different combinations of
-            skills and attacks.
-          </p>
-        </section>
+        <div class="bg-slate-50">
+          <header class="text-3xl p-4 font-semibold">Genshin Impact</header>
+          <section class="bg-black-100" id="introduction">
+            <header class="p-3 text-xl">Introduction</header>
+            <p class="text-sm p-3">
+              Genshin Impact is an open-world action role-playing game that
+              allows the player to control one of four interchangeable
+              characters in a party. Switching between characters can be done
+              quickly during combat, allowing the player to use several
+              different combinations of skills and attacks. The game is set on
+              the continent of Teyvat, a vast, completely open world consisting
+              of 7 nations associated with a different element, and a god-like
+              figure of said element. You play the role of a traveler from a far
+              away world, sealed in Teyvat following a confrontation with a
+              powerful entity who separates you from your sibling. Your main
+              driving goal is to reunite with said lost sibling. On your journey
+              you are accompanied by a strange floating fairy thing which
+              accompanies you and serves as both a guide as well as a quirky
+              sidekick.
+            </p>
+          </section>
+        </div>
       </main>
     </div>
+
+    <footer
+      class="p-4 bg-white shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800"
+    >
+      <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400"
+        >© 2022
+        <a href="https://flowbite.com" class="hover:underline">Flowbite™</a>.
+        All Rights Reserved.
+      </span>
+      <ul
+        class="flex flex-wrap items-center mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-0"
+      >
+        <li>
+          <a href="#" class="mr-4 hover:underline md:mr-6">About</a>
+        </li>
+        <li>
+          <a href="#" class="mr-4 hover:underline md:mr-6">Privacy Policy</a>
+        </li>
+        <li>
+          <a href="#" class="mr-4 hover:underline md:mr-6">Licensing</a>
+        </li>
+        <li>
+          <a href="#" class="hover:underline">Contact</a>
+        </li>
+      </ul>
+    </footer>
+
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>
 </html>
